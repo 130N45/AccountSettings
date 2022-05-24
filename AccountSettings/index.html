@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Oxygen:wght@300&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <title>AccountSettings</title>
+</head>
+
+<body title="Settings" class="head">
+    <h1>Settings</h1>
+    <div class="container">
+        <div class="header">
+            <input class="avatar" type="button">
+            <input class="changeavatar" type="button" name="changeavatar" value="Change avatar...">
+            <h4>Account Settings</h4>
+            <input class="username" type="text" name="username" value="Leon Praßl">
+            <input class="biography" type="text" name="biography" placeholder="20 Y/o from Essen">
+            <input class="website" type="url" name="customurl" placeholder="Website...">
+            <input class="email" type="email" name="usermail" placeholder="l.n.prassl@gmail.com">
+            <select class="gender" name="gender" size="1">
+				<option selected="selected">Male</option>
+				<option>Female</option>
+				<option>U-Boot</option>
+			</select>
+            <div class="publicacc">
+                <p>Private Account</p>
+            </div>
+            <label class="switch_privateaccount">
+				<input type="checkbox"> <span class="slider round"></span> </label>
+            <div class="changepassword">
+                <p>Change Password</p>
+                <details class="changepasswordcontain">
+                    <summary></summary>
+                    <input class="changepassword" type="password" name="changepassword">
+                    <input class="submitpassword" type="button" name="submit" value="Save"> </details>
+                <h4>Privacy and Security</h4>
+                <div class="blockeduser">
+                    <p>Blocked Accounts</p>
+                    <details class="blockedaccscontain">
+                        <summary></summary>
+                        <ul>
+                            <li>Blocked User3</li>
+                            <li>Blocked User3</li>
+                            <li>Blocked User3</li>
+                        </ul>
+                    </details>
+                    <div class="showactivity">
+                        <p>Show your activity</p>
+                    </div>
+                    <label class="switch_activity">
+						<input type="checkbox"> <span class="slider round"></span> </label>
+                </div>
+                <div class="savesharedpics">
+                    <p>Save shared pictures</p>
+                </div>
+                <label class="switch_savepic">
+					<input type="checkbox"> <span class="slider round"></span> </label>
+                <div class="commentsettings">
+                    <p>Comment Settings</p>
+                    <details class="commentsettingstext">
+                        <summary></summary>
+                        <input type="button" name="allow_all" value="Allow all">
+                        <input type="button" name="disable" value="Disable comments">
+                        <input type="button" name="check_comments" value="Check comments for insultings"> </details>
+                    <div class="syncrocontacts">
+                        <p>Syncronize contacts</p>
+                    </div>
+                    <label class="switch_syncrocontact">
+						<input type="checkbox"> <span class="slider round"></span> </label>
+                    <div class="notificationsettings">
+                        <p>Notifications</p>
+                        <details class="notificationbox">
+                            <summary></summary>
+                            <input type="button" name="enable" value="enable">
+                            <input type="button" name="disable" value="disable"> </details>
+                        <div class="twowayauthentification">
+                            <p>Two-Way Factor Authentification</p>
+                            <details class="twoway">
+                                <summary></summary>
+                                <input type="tel" name="telnumber" placeholder="Tel. Number">
+                                <input type="button" name="submit" value="Send">
+                                <input type="text" name="received_code" placeholder="Received SMS-Code (8 digit code)"> </details>
+                            <div class="signout">
+                                <p>Sign out</p>
+                                <details class="signoutaction">
+                                    <summary></summary>
+                                    <input type="button" name="signout" value="Sign out"></details>
+                            </div>
+                        </div>
+                    </div>
+</body>
+
+</html>
